@@ -8,10 +8,19 @@ import { Menu } from '../menu.model';
 })
 export class MenuComponent implements OnInit {
 
+  position: {
+    left: 20,
+    top: 10
+  }
+
 @Input() menuHeader: Menu[];
 @Output() changePage = new EventEmitter;
 
   constructor() { }
+
+  ngOnChanges() {
+    console.log(this.menuHeader);
+  }
 
   ngOnInit(): void {
     console.log(this.menuHeader);
