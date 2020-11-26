@@ -1,0 +1,13 @@
+<button (click)="changeSort()">Sort</button>
+<div *ngFor="let user of users | sort : 'asc'">
+    <p>{{user.name}}</p>
+    <p>{{user.age}}</p>
+</div>
+
+<div>
+    {{size | round : 3}}
+</div>
+
+<div>
+    {{size | round}}
+</div>
