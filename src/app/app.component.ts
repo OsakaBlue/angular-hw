@@ -8,10 +8,16 @@ import { User } from './user.model';
 })
 export class AppComponent {
 
-    defaultSort = 'asc';
-
-  nowDate = new Date();
+  defaultSort = 'asc';
   
+  nowDate = new Date();
+
+  discount = 0.2;
+
+  price = 100;
+
+  text = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odit voluptatibus modi aspernatur voluptate tempore, iusto quaerat fugiat! Expedita eos dolores sed rem natus cumque aliquid esse eaque! Sequi, beatae.';
+
   users: User[] = [{
     name: 'User 1',
     age: 20
