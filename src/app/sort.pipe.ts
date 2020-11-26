@@ -11,7 +11,7 @@ export class SortPipe implements PipeTransform {
     function sortArray(a: User, b: User): number {
       if (args[0] === 'desc') {
         return b.age - a.age;
-      } else if (args[0] === 'asc') {
+      } else (args[0] === 'asc') {
         return a.age - b.age;
       }
 
