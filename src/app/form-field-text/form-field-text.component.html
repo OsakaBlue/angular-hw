@@ -1,0 +1,8 @@
+<label class="d-block">
+    {{label}}
+    <input type="text" class="form-control" 
+    formControlName="name" [ngClass]="{'is-invalid': form.name.errors && form.name.dirty}">
+    <!-- <div class="invalid-feedback" *ngIf="formOrder.get('name').errors?.required">
+        Name is required
+    </div> -->
+   </label>
